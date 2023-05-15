@@ -41,7 +41,7 @@ def meltano_command_op(
     Returns:
         OpDefinition: The Dagster op definition.
     """
-    dagster_name = dagster_name or generate_dagster_name(command)
+    dagster_name = dagster_name
     ins = {
         "after": In(Nothing),
         "env": In(
